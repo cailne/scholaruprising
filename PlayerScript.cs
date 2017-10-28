@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
-	public float speed;
+    public GameObject upAttack;
+    public GameObject LAttack;
+    public GameObject RAttack;
+    public float speed;
     public float maxSpeed;
     public float maxSlide;
     public float jumpLimit;
@@ -18,120 +21,262 @@ public class PlayerScript : MonoBehaviour {
     private float wallJumpTimer = 0;
     private bool wallJumpDirection = false;
     public float wallJumpTime;
+    private bool isAttack=false;
+    private float attackCD = 0;
+    public float attackCDMax;
+    private bool isHang = false;
+    private float airHangTime = 0;
+    public float airHangMax;
+    bool airhand = false;
+    private bool facing=false;
     private int jumpTotal;
-	Rigidbody2D rb;
-
+    private bool isStagger = false;
+    private float staggerCD = 0;
+    public float staggerCDMax;
+    private bool iframeActive = false;
+    private float iframe = 0;
+    public float iframeMax;
+    Rigidbody2D rb;
+    private Color tmp;
 	private float verticalJump;
 
 	void Start () {
-		rb = GetComponent<Rigidbody2D> ();
+        upAttack.SetActive(false);
+        LAttack.SetActive(false);
+        RAttack.SetActive(false);
+        
+        rb = GetComponent<Rigidbody2D> ();
         maxYSpeedMemo = maxYSpeed;
 	}
 
 
     void Update() {
-        
+        //controls Stagger
+        if (isStagger)
+        {
 
-        //Horizontal movements
-        if (!isWallJump&&!(Input.GetKey(KeyCode.RightArrow)&& Input.GetKey(KeyCode.LeftArrow))) { 
-            if (Input.GetKey(KeyCode.RightArrow)) {
-                rb.velocity += Vector2.right * speed * Time.deltaTime;
-            } else if (Input.GetKey(KeyCode.LeftArrow)) {
-                rb.velocity += Vector2.left * speed * Time.deltaTime;
-            }else   {
-                rb.velocity += new Vector2(-1, 0) * rb.velocity.x;
+            staggerCD += Time.deltaTime;
+            if (staggerCD >= staggerCDMax)
+            {
+                isStagger = false;
+                staggerCD = 0;
+                Debug.Log("exitStagger");
             }
         }
 
-
-        //stopper
-        if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+        //controls iframes
+        if (iframeActive)
         {
-            rb.velocity +=  new Vector2(-1,0)* rb.velocity.x;
-        }
-        
-        //Jump Executor
-        if (Input.GetKeyDown(KeyCode.Space)&&jumpDone<jumpLimit)
-        {
-            Debug.Log("Wall jump is " + isWallJump);
-            maxYSpeed = maxYSpeedMemo;
-            if (isGrounded)
-            {
-                isGrounded = false;
-                rb.velocity = Vector2.up * jumpForce;
-            }else if(isSliding)
-            {
-                isWallJump = true;
-                isSliding = false;
-                rb.velocity = Vector2.up * jumpForce;
-
-                //wall jump to left, or right, stop on release or after a split second<---------------------------------------------------------------
-                //false = left, true = right
-                if (Input.GetKey(KeyCode.RightArrow)) { wallJumpDirection = false; }
-                if (Input.GetKey(KeyCode.LeftArrow)) { wallJumpDirection = true; }
-                Debug.Log("WallJump Start");
-  
-            }
-            //midAirjump
-            else
-            {
-                rb.velocity = Vector2.up * jumpForce;
-                jumpDone++;
-                wallJumpTimer = 0;
-            }
+            iframe += Time.deltaTime;
             
-        }
-
-        //wall jump
-        if (isWallJump)
-        {
-            wallJumpTimer += Time.deltaTime;
-            Debug.Log("You have jumped for " + wallJumpTimer);
-            if (wallJumpTimer < wallJumpTime)
+            if (iframe >= iframeMax)
             {
-                if (wallJumpDirection) { rb.velocity += Vector2.right * jumpForce; }
-                else { rb.velocity += Vector2.left * jumpForce; }
-                Debug.Log("Velocity is at " + rb.velocity.x);
-                Debug.Log("Facing is at "+wallJumpDirection);
-            }
-            else
-            {
-                wallJumpTimer = 0;
-                isWallJump = false;
-                Debug.Log("WallJump End");
+                iframeActive = false;
+                iframe = 0;
+                tmp = GetComponent<SpriteRenderer>().color;
+                tmp.a = 1f;
+                GetComponent<SpriteRenderer>().color = tmp;
+                Debug.Log("exitFrames");
             }
         }
 
-
-        //momentum Cancellor on Up Jump
-        if (rb.velocity.y >0&&Input.GetKeyUp(KeyCode.Space))
+        //as long as you are not staggered
+        if(!isStagger)
         {
-            rb.velocity += Vector2.down * rb.velocity.y;
-            isWallJump = false;
-            Debug.Log("Lost WallJuump by release");
+            //attack with z
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                upAttack.SetActive(false);
+                if (facing == false) { LAttack.SetActive(true); }
+                if (facing == true) { RAttack.SetActive(true); }
+                isAttack = true;
+                attackCD = 0;
+            }
+
+            //facing, false=left, true=right
+            if (Input.GetKeyDown(KeyCode.LeftArrow)) { facing = false; }
+            if (Input.GetKeyDown(KeyCode.RightArrow)) { facing = true; }
+
+            //air hang/attack cancels jump/move/gravity
+            if (!isHang && !isAttack)
+            {
+                //jump Attack spawn/despawner
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    if (rb.velocity.y > 0)
+                    {
+                        upAttack.SetActive(true);
+                    }
+                }
+                if (rb.velocity.y <= 0)
+                {
+                    upAttack.SetActive(false);
+                }
+
+                //Horizontal movements
+                if (!isWallJump && !(Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow)))
+                {
+                    if (Input.GetKey(KeyCode.RightArrow))
+                    {
+                        rb.velocity += Vector2.right * speed * Time.deltaTime;
+                    }
+                    else if (Input.GetKey(KeyCode.LeftArrow))
+                    {
+                        rb.velocity += Vector2.left * speed * Time.deltaTime;
+                    }
+                    else
+                    {
+                        rb.velocity += new Vector2(-1, 0) * rb.velocity.x;
+                    }
+                }
+
+
+                //stopper
+                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    rb.velocity += new Vector2(-1, 0) * rb.velocity.x;
+                }
+
+                //Jump Executor
+                if (Input.GetKeyDown(KeyCode.Space) && jumpDone < jumpLimit)
+                {
+                    // Debug.Log("Wall jump is " + isWallJump);
+                    maxYSpeed = maxYSpeedMemo;
+                    if (isGrounded)
+                    {
+                        isGrounded = false;
+                        rb.velocity = Vector2.up * jumpForce;
+                    }
+                    else if (isSliding)
+                    {
+                        isWallJump = true;
+                        isSliding = false;
+                        rb.velocity = Vector2.up * jumpForce;
+
+                        //wall jump to left, or right, stop on release or after a split second<---------------------------------------------------------------
+                        //false = left, true = right
+                        if (Input.GetKey(KeyCode.RightArrow)) { wallJumpDirection = false; }
+                        if (Input.GetKey(KeyCode.LeftArrow)) { wallJumpDirection = true; }
+                        //Debug.Log("WallJump Start");
+
+                    }
+                    //midAirjump
+                    else
+                    {
+                        rb.velocity = Vector2.up * jumpForce;
+                        jumpDone++;
+                        wallJumpTimer = 0;
+                    }
+
+                }
+
+                //wall jump
+                if (isWallJump)
+                {
+                    wallJumpTimer += Time.deltaTime;
+                    //Debug.Log("You have jumped for " + wallJumpTimer);
+                    if (wallJumpTimer < wallJumpTime)
+                    {
+                        if (wallJumpDirection) { rb.velocity += Vector2.right * jumpForce; }
+                        else { rb.velocity += Vector2.left * jumpForce; }
+                        // Debug.Log("Velocity is at " + rb.velocity.x);
+                        //Debug.Log("Facing is at "+wallJumpDirection);
+                    }
+                    else
+                    {
+                        wallJumpTimer = 0;
+                        isWallJump = false;
+                        // Debug.Log("WallJump End");
+                    }
+                }
+
+
+                //momentum Cancellor on Up Jump
+                if (rb.velocity.y > 0 && Input.GetKeyUp(KeyCode.Space))
+                {
+                    rb.velocity += Vector2.down * rb.velocity.y;
+                    isWallJump = false;
+                    //Debug.Log("Lost WallJuump by release");
+                }
+
+                //Speed Limiter
+                if (rb.velocity.y > maxYSpeed) { rb.velocity += Vector2.down * (rb.velocity.y - maxYSpeed); }
+                else if (rb.velocity.y < -1 * maxYSpeed) { rb.velocity += Vector2.up * -1 * (rb.velocity.y + maxYSpeed); }
+
+                if (rb.velocity.x > maxSpeed) { rb.velocity += Vector2.left * (rb.velocity.x - maxSpeed); }
+                else if (rb.velocity.x < -1 * maxSpeed) { rb.velocity += Vector2.right * -1 * (rb.velocity.x + maxSpeed); }
+
+                if (isWallJump)
+                {
+                    if (rb.velocity.x > maxSpeed / 2) { rb.velocity += Vector2.left * (rb.velocity.x - maxSpeed / 2); }
+                    else if (rb.velocity.x < -1 * maxSpeed / 2) { rb.velocity += Vector2.right * -1 * (rb.velocity.x + maxSpeed / 2); }
+                }
+                //Gravity
+                if (!isGrounded)
+                {
+                    rb.velocity += Vector2.down * gravPower * Time.deltaTime;
+                    maxYSpeed = maxYSpeedMemo;
+                }
+            }
+            else if (isHang)
+            {
+                //airHang timing
+                airHangTime += Time.deltaTime;
+                rb.velocity = new Vector2(0, 0);
+                if (airHangTime >= airHangMax)
+                {
+                    airHangTime = 0;
+                    isHang = false;
+                }
+
+            }
+            else if (isAttack)
+            {
+                //attack CD
+                Debug.Log(attackCD);
+                rb.velocity = new Vector2(0, 0);
+                attackCD += Time.deltaTime;
+                if (attackCD >= attackCDMax / 2)
+                {
+                    LAttack.SetActive(false);
+                    RAttack.SetActive(false);
+                }
+                if (attackCD >= attackCDMax)
+                {
+                    attackCD = 0;
+                    isAttack = false;
+                }
+            }
         }
-
-        //Speed Limiter
-        if (rb.velocity.y > maxYSpeed) { rb.velocity += Vector2.down * (rb.velocity.y - maxYSpeed);  }
-        else if (rb.velocity.y < -1*maxYSpeed) { rb.velocity += Vector2.up * -1*(rb.velocity.y + maxYSpeed);  }
-
-        if (rb.velocity.x > maxSpeed) { rb.velocity += Vector2.left * (rb.velocity.x - maxSpeed); }
-        else if (rb.velocity.x<-1*maxSpeed) {rb.velocity += Vector2.right * -1 * (rb.velocity.x + maxSpeed); }
-
-        if (isWallJump)
-        {
-            if (rb.velocity.x > maxSpeed/2) { rb.velocity += Vector2.left * (rb.velocity.x - maxSpeed/2); }
-            else if (rb.velocity.x < -1 * maxSpeed/2) { rb.velocity += Vector2.right * -1 * (rb.velocity.x + maxSpeed/2); }
-        }
-        //Gravity
-        if (!isGrounded) {
-            rb.velocity += Vector2.down * gravPower * Time.deltaTime;
-            maxYSpeed = maxYSpeedMemo;
-		}
+        
+        
 
         
 	}
-
+    void airHang()
+    {
+        if (!isGrounded)
+        {
+            isHang = true;
+            jumpDone = 0;
+            }
+    }
+    void stagger()
+    {
+        
+        if (!iframeActive)
+        {
+            isStagger = true;
+            LAttack.SetActive(false);
+            RAttack.SetActive(false);
+            upAttack.SetActive(false);
+            rb.velocity = new Vector2(0, 0);
+            iframeActive = true;
+            tmp = GetComponent<SpriteRenderer>().color;
+            tmp.a = 0.5f;
+            GetComponent<SpriteRenderer>().color = tmp;
+        }
+    }
 	private void OnCollisionStay2D(Collision2D col) {
         if (col.gameObject.tag == "Blocks")
         {
@@ -171,7 +316,6 @@ public class PlayerScript : MonoBehaviour {
     {
 
        
-
     }
 
 
