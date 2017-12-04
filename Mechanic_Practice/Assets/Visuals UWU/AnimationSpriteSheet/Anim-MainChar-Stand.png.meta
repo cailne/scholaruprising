@@ -1,0 +1,1207 @@
+fileFormatVersion: 2
+guid: 339413162ae181848acd7189ce30ef55
+timeCreated: 1509286709
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Anim-MainChar-Stand_0
+    21300002: Anim-MainChar-Stand_1
+    21300004: Anim-MainChar-Stand_2
+    21300006: Anim-MainChar-Stand_3
+    21300008: Anim-MainChar-Stand_4
+    21300010: Anim-MainChar-Stand_5
+    21300012: Anim-MainChar-Stand_6
+    21300014: Anim-MainChar-Stand_7
+    21300016: Anim-MainChar-Stand_8
+    21300018: Anim-MainChar-Stand_9
+    21300020: Anim-MainChar-Stand_10
+    21300022: Anim-MainChar-Stand_11
+    21300024: Anim-MainChar-Stand_12
+    21300026: Anim-MainChar-Stand_13
+    21300028: Anim-MainChar-Stand_14
+    21300030: Anim-MainChar-Stand_15
+    21300032: Anim-MainChar-Stand_16
+    21300034: Anim-MainChar-Stand_17
+    21300036: Anim-MainChar-Stand_18
+    21300038: Anim-MainChar-Stand_19
+    21300040: Anim-MainChar-Stand_20
+    21300042: Anim-MainChar-Stand_21
+    21300044: Anim-MainChar-Stand_22
+    21300046: Anim-MainChar-Stand_23
+    21300048: Anim-MainChar-Stand_24
+    21300050: Anim-MainChar-Stand_25
+    21300052: Anim-MainChar-Stand_26
+    21300054: Anim-MainChar-Stand_27
+    21300056: Anim-MainChar-Stand_28
+    21300058: Anim-MainChar-Stand_29
+    21300060: Anim-MainChar-Stand_30
+    21300062: Anim-MainChar-Stand_31
+    21300064: Anim-MainChar-Stand_32
+    21300066: Anim-MainChar-Stand_33
+    21300068: Anim-MainChar-Stand_34
+    21300070: Anim-MainChar-Stand_35
+    21300072: Anim-MainChar-Stand_36
+    21300074: Anim-MainChar-Stand_37
+    21300076: Anim-MainChar-Stand_38
+    21300078: Anim-MainChar-Stand_39
+    21300080: Anim-MainChar-Stand_40
+    21300082: Anim-MainChar-Stand_41
+    21300084: Anim-MainChar-Stand_42
+    21300086: Anim-MainChar-Stand_43
+    21300088: Anim-MainChar-Stand_44
+    21300090: Anim-MainChar-Stand_45
+    21300092: Anim-MainChar-Stand_46
+    21300094: Anim-MainChar-Stand_47
+    21300096: Anim-MainChar-Stand_48
+    21300098: Anim-MainChar-Stand_49
+    21300100: Anim-MainChar-Stand_50
+    21300102: Anim-MainChar-Stand_51
+    21300104: Anim-MainChar-Stand_52
+    21300106: Anim-MainChar-Stand_53
+    21300108: Anim-MainChar-Stand_54
+    21300110: Anim-MainChar-Stand_55
+    21300112: Anim-MainChar-Stand_56
+    21300114: Anim-MainChar-Stand_57
+    21300116: Anim-MainChar-Stand_58
+    21300118: Anim-MainChar-Stand_59
+    21300120: Anim-MainChar-Stand_60
+    21300122: Anim-MainChar-Stand_61
+    21300124: Anim-MainChar-Stand_62
+    21300126: Anim-MainChar-Stand_63
+    21300128: Anim-MainChar-Stand_64
+    21300130: Anim-MainChar-Stand_65
+    21300132: Anim-MainChar-Stand_66
+    21300134: Anim-MainChar-Stand_67
+    21300136: Anim-MainChar-Stand_68
+    21300138: Anim-MainChar-Stand_69
+    21300140: Anim-MainChar-Stand_70
+    21300142: Anim-MainChar-Stand_71
+    21300144: Anim-MainChar-Stand_72
+    21300146: Anim-MainChar-Stand_73
+    21300148: Anim-MainChar-Stand_74
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1936
+        width: 127
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1933
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_2
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1936
+        width: 127
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_3
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1936
+        width: 128
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_4
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1936
+        width: 128
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_5
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1936
+        width: 128
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1824
+        width: 129
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1824
+        width: 126
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1824
+        width: 126
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_9
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1824
+        width: 127
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_10
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1824
+        width: 126
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_11
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1824
+        width: 126
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_12
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1824
+        width: 125
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1712
+        width: 126
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1712
+        width: 126
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1712
+        width: 126
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_16
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1712
+        width: 126
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_17
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1712
+        width: 126
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_18
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1712
+        width: 125
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_19
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1712
+        width: 126
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1600
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1600
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1600
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_23
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1600
+        width: 125
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_24
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1600
+        width: 126
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_25
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1600
+        width: 126
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_26
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1600
+        width: 126
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1488
+        width: 125
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_28
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1488
+        width: 125
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_29
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1488
+        width: 125
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_30
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1488
+        width: 125
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_31
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1488
+        width: 126
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_32
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1488
+        width: 125
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_33
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1488
+        width: 126
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1376
+        width: 126
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_35
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1376
+        width: 125
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1376
+        width: 125
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_37
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1376
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_38
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1376
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_39
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1376
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_40
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1376
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_41
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1264
+        width: 126
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_42
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1264
+        width: 126
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_43
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1264
+        width: 126
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_44
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1264
+        width: 126
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_45
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1264
+        width: 126
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_46
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1264
+        width: 126
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_47
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1264
+        width: 126
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1152
+        width: 126
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_49
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1152
+        width: 126
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_50
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1152
+        width: 126
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_51
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1152
+        width: 126
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_52
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1152
+        width: 125
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_53
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1152
+        width: 125
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_54
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1152
+        width: 126
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_55
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1040
+        width: 126
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_56
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1040
+        width: 126
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_57
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1040
+        width: 128
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_58
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1040
+        width: 127
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_59
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1040
+        width: 126
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_60
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1040
+        width: 127
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_61
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1040
+        width: 127
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 927
+        width: 129
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_63
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 927
+        width: 127
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_64
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 928
+        width: 127
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_65
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 928
+        width: 128
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_66
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 928
+        width: 127
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_67
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 928
+        width: 127
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 128
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_69
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 816
+        width: 130
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_70
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 816
+        width: 127
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_71
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 816
+        width: 127
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_72
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 815
+        width: 128
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_73
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 927
+        width: 129
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Stand_74
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1931
+        width: 127
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

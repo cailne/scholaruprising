@@ -1,0 +1,9 @@
+~~Welcome to Scholar Uprising's Control Scheme~~
+
+Move: Directional Keys
+Jump: Space bar
+Attack: Z
+
+You can double jump
+Your jump also counts as an attack
+If you manage to hit an enemy in the air, you get an extra jump!

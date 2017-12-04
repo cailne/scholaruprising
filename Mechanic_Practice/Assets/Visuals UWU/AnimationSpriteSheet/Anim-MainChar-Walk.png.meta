@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 1362922ccc77027408bff36af1bf167e
+timeCreated: 1509290551
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Anim-MainChar-Walk_0
+    21300002: Anim-MainChar-Walk_1
+    21300004: Anim-MainChar-Walk_2
+    21300006: Anim-MainChar-Walk_3
+    21300008: Anim-MainChar-Walk_4
+    21300010: Anim-MainChar-Walk_5
+    21300012: Anim-MainChar-Walk_6
+    21300014: Anim-MainChar-Walk_7
+    21300016: Anim-MainChar-Walk_8
+    21300018: Anim-MainChar-Walk_9
+    21300020: Anim-MainChar-Walk_10
+    21300022: Anim-MainChar-Walk_11
+    21300024: Anim-MainChar-Walk_12
+    21300026: Anim-MainChar-Walk_13
+    21300028: Anim-MainChar-Walk_14
+    21300030: Anim-MainChar-Walk_15
+    21300032: Anim-MainChar-Walk_16
+    21300034: Anim-MainChar-Walk_17
+    21300036: Anim-MainChar-Walk_18
+    21300038: Anim-MainChar-Walk_19
+    21300040: Anim-MainChar-Walk_20
+    21300042: Anim-MainChar-Walk_21
+    21300044: Anim-MainChar-Walk_22
+    21300046: Anim-MainChar-Walk_23
+    21300048: Anim-MainChar-Walk_24
+    21300050: Anim-MainChar-Walk_25
+    21300052: Anim-MainChar-Walk_26
+    21300054: Anim-MainChar-Walk_27
+    21300056: Anim-MainChar-Walk_28
+    21300058: Anim-MainChar-Walk_29
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 902
+        width: 114
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 902
+        width: 99
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 902
+        width: 93
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 902
+        width: 88
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 781
+        width: 92
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 780
+        width: 93
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 782
+        width: 104
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 783
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 659
+        width: 119
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 659
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_10
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 658
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_11
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 657
+        width: 111
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 534
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 533
+        width: 107
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 533
+        width: 105
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_15
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 532
+        width: 102
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_16
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 410
+        width: 89
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 410
+        width: 86
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_18
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 410
+        width: 87
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_19
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 412
+        width: 90
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 290
+        width: 94
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_21
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 293
+        width: 102
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 293
+        width: 121
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_23
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 293
+        width: 116
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 168
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_25
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 168
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_26
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 167
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_27
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 166
+        width: 114
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 42
+        width: 113
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anim-MainChar-Walk_29
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 41
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

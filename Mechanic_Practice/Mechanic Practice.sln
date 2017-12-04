@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mechanic Practice.Plugins", "Mechanic Practice.Plugins.csproj", "{53FBF06C-3A57-260B-45AF-73D7EE441FF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mechanic Practice", "Mechanic Practice.csproj", "{80203AD6-F334-836E-9DD6-C526F0E78900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mechanic Practice.Editor.Plugins", "Mechanic Practice.Editor.Plugins.csproj", "{D5F6432C-54DB-B802-CCD7-BC806B3E3F6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53FBF06C-3A57-260B-45AF-73D7EE441FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FBF06C-3A57-260B-45AF-73D7EE441FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FBF06C-3A57-260B-45AF-73D7EE441FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FBF06C-3A57-260B-45AF-73D7EE441FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80203AD6-F334-836E-9DD6-C526F0E78900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80203AD6-F334-836E-9DD6-C526F0E78900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80203AD6-F334-836E-9DD6-C526F0E78900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80203AD6-F334-836E-9DD6-C526F0E78900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F6432C-54DB-B802-CCD7-BC806B3E3F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F6432C-54DB-B802-CCD7-BC806B3E3F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F6432C-54DB-B802-CCD7-BC806B3E3F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F6432C-54DB-B802-CCD7-BC806B3E3F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
