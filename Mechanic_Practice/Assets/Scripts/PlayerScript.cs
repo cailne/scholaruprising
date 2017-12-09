@@ -194,6 +194,7 @@ public class PlayerScript : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Space) && jumpDone < jumpLimit)
                 {
                     PlaySound(1);
+                    playerAnim.Play("Air", 0, 0f);
                     LAttack.SetActive(false);
                     // Debug.Log("Wall jump is " + isWallJump);
                     maxYSpeed = maxYSpeedMemo;
