@@ -24,14 +24,15 @@ public class PlayerScript : MonoBehaviour {
     private bool isWallJump=false;
     private float wallJumpTimer = 0;
     private bool facingDirection = false;
+    private bool dashDirection = false;
     public float wallJumpTime;
+    private bool wallContact = false;
     private bool isAttack=false;
     private float attackCD = 0;
     public float attackCDMax;
     private bool isHang = false;
     private float airHangTime = 0;
     public float airHangMax;
-    bool airhand = false;
     private int jumpTotal;
     private bool isStagger = false;
     private float staggerCD = 0;
@@ -78,7 +79,6 @@ public class PlayerScript : MonoBehaviour {
     }
 
     void Update() {
-        Debug.Log("Grounded stat is "+isGrounded);
 
         //control animation flipping
         if (!isAttack) {
@@ -122,12 +122,12 @@ public class PlayerScript : MonoBehaviour {
         }
 
         //as long as you are not staggered
-        if(!isStagger)
+        if (!isStagger)
         {
             //attack with z
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                if (!isAttack&&dashDone<1) {
+                if (!isAttack && dashDone < 1) {
                     PlaySound(0); //voice pas attack
                     upAttack.SetActive(false);
                     LAttack.SetActive(true);
@@ -137,8 +137,13 @@ public class PlayerScript : MonoBehaviour {
                     isWallJump = false;
                 }
             }
-
-
+            //cancel attack by letting go of Z
+            if (Input.GetKeyUp(KeyCode.Z) && isAttack)
+            {
+                isAttack = false;
+                attackCD = 0;
+                LAttack.SetActive(false);
+            }
             //jump cancels air hang
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -161,19 +166,19 @@ public class PlayerScript : MonoBehaviour {
                 {
                     upAttack.SetActive(false);
                 }
-               
+
 
                 //Horizontal movements
-                if (!isAttack&&!isWallJump && !(Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow)))
+                if (!isAttack && !isWallJump && !(Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow)))
                 {
                     if (Input.GetKey(KeyCode.RightArrow))
                     {
-                        facingDirection = true;
+                        dashDirection = true;
                         rb.velocity += Vector2.right * speed * Time.deltaTime;
                     }
                     else if (Input.GetKey(KeyCode.LeftArrow))
                     {
-                        facingDirection = false;
+                        dashDirection = false;
                         rb.velocity += Vector2.left * speed * Time.deltaTime;
                     }
                     else
@@ -182,10 +187,10 @@ public class PlayerScript : MonoBehaviour {
                     }
                 }
 
-                
+
 
                 //stopper
-                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)||isAttack)
+                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || isAttack)
                 {
                     rb.velocity += new Vector2(-1, 0) * rb.velocity.x;
                 }
@@ -268,7 +273,7 @@ public class PlayerScript : MonoBehaviour {
                     else if (rb.velocity.x < -1 * maxSpeed / 2) { rb.velocity += Vector2.right * -1 * (rb.velocity.x + maxSpeed / 2); }
                 }
                 //Gravity
-                if (!isGrounded&&!isAttack)
+                if (!isGrounded && !isAttack)
                 {
                     rb.velocity += Vector2.down * gravPower * Time.deltaTime;
                     maxYSpeed = maxYSpeedMemo;
@@ -290,13 +295,17 @@ public class PlayerScript : MonoBehaviour {
                 isAttack = false;
 
             }
+            //Attacking
             if (isAttack)
             {
                 //attack CD
-                maxSpeed =20;
-                if (facingDirection) { rb.velocity += Vector2.right * dashSpeed  * Time.deltaTime; }
-                else { rb.velocity += Vector2.left * dashSpeed  * Time.deltaTime; }
+                maxSpeed = dashSpeed;
+                if (dashDirection) { rb.velocity += Vector2.right * dashSpeed; }
+                else { rb.velocity += Vector2.left * dashSpeed; }
+
+                //Stop vertical movement
                 rb.velocity += new Vector2(0, -1) * rb.velocity.y;
+
                 attackCD += Time.deltaTime;
                 if (attackCD >= attackCDMax)
                 {
@@ -306,12 +315,38 @@ public class PlayerScript : MonoBehaviour {
                 }
             }
             else { maxSpeed = maxSpeedMemo; }
+            //WallSliding
+            if (wallContact&&!isWallJump) {
+                if (dashDirection)
+                {
+                    if (Input.GetKey(KeyCode.RightArrow))
+                    {
+                        jumpDone = 0;
+                        dashDone = 0;
+                        maxYSpeed = maxSlide;
+                        isSliding = true;
+                    }
+                    else { isSliding = false; maxYSpeed = maxYSpeedMemo; }
+                }else
+                {
+                    if (Input.GetKey(KeyCode.LeftArrow)) {
+                        jumpDone = 0;
+                        dashDone = 0;
+                        maxYSpeed = maxSlide;
+                        isSliding = true;
+                    }
+                    else { isSliding = false; maxYSpeed = maxYSpeedMemo; }
+                }
+            }
+            else {
+                maxYSpeed = maxYSpeedMemo;
+                isSliding = false;
+            }
         }
-        
-        
 
-        
-	}
+
+
+    }
     void airHang()
     {
        isHang = true;
@@ -334,6 +369,17 @@ public class PlayerScript : MonoBehaviour {
             GetComponent<SpriteRenderer>().color = tmp;
         }
     }
+
+    //Controls wall sliding
+    private void wallSlide()
+    {
+        wallContact = true;
+    }
+    private void wallExit()
+    {
+        wallContact = false;
+    }
+    /*
     private void OnCollisionExit2D(Collision2D col)
     {
 
@@ -346,12 +392,14 @@ public class PlayerScript : MonoBehaviour {
     private void OnCollisionStay2D(Collision2D col) {
         if (col.gameObject.tag == "Wall")
         {
+            Debug.Log("Walled stat is " + isSliding);
+            Debug.Log("Max Y stat is " + maxYSpeed);
             LAttack.SetActive(false);
             attackCD = 0;
             isAttack = false;
             if ((Input.GetKey(KeyCode.LeftArrow) &&transform.position.x>col.transform.position.x)|| (Input.GetKey(KeyCode.RightArrow) && transform.position.x < col.transform.position.x))
             {
-                if (rb.velocity.y<0) {
+                if (rb.velocity.y<=0) {
                     jumpDone = 0;
                     dashDone = 0;
                     maxYSpeed = maxSlide;
@@ -361,30 +409,29 @@ public class PlayerScript : MonoBehaviour {
             else
             {
                 maxYSpeed = maxYSpeedMemo;
+                isSliding = false;
             }
         }
 
     }
-
+    */
     
 
+    //Controls ground animation, so it doesn't jitter when it runs normally. Also controls if you are grounded or not.
     
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Blocks")
-        {
-            isGrounded = false;
-        }
-
-    }
     private void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.tag == "Blocks")
         {
+            Debug.Log("One");
             isGrounded = true;
             jumpDone = 0;
             dashDone = 0;
         }
-
+        
+    }
+    private void OnTriggerExit2D(Collider2D col)
+    {
+            isGrounded = false;   
     }
 }

@@ -12,7 +12,16 @@ public class AttackUpScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector2(player.transform.position.x, player.transform.position.y+2);
+        if (Input.GetAxis("Horizontal") < -0.1f)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        if (Input.GetAxis("Horizontal") > 0.1f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
+        transform.position = new Vector2(player.transform.position.x, player.transform.position.y);
         if (Input.GetKey(KeyCode.Space))
         {
             if (player.GetComponent<Rigidbody2D>().velocity.y>0)
