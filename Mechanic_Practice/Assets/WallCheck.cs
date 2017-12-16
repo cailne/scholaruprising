@@ -27,7 +27,6 @@ public class WallCheck : MonoBehaviour {
 
         if (col.gameObject.tag == "Wall")
         {
-            Debug.Log("yea");
             player.SendMessage("wallSlide");
         }
         

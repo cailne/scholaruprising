@@ -207,9 +207,11 @@ public class PlayerScript : MonoBehaviour {
                     {
                         isGrounded = false;
                         rb.velocity = Vector2.up * jumpForce;
+                        Debug.Log("Normal Jump");
                     }
                     else if (isSliding)
                     {
+                        Debug.Log("isWallJumping");
                         isWallJump = true;
                         isSliding = false;
                         rb.velocity = Vector2.up * jumpForce;
@@ -373,7 +375,10 @@ public class PlayerScript : MonoBehaviour {
     //Controls wall sliding
     private void wallSlide()
     {
-        wallContact = true;
+        if (rb.velocity.y<0&&!isGrounded) {
+            wallContact = true;
+        }
+        
     }
     private void wallExit()
     {
@@ -423,7 +428,8 @@ public class PlayerScript : MonoBehaviour {
     {
         if (col.gameObject.tag == "Blocks")
         {
-            Debug.Log("One");
+            wallContact = false;
+            isSliding = false; maxYSpeed = maxYSpeedMemo;
             isGrounded = true;
             jumpDone = 0;
             dashDone = 0;
