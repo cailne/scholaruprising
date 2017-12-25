@@ -79,7 +79,7 @@ public class PlayerScript : MonoBehaviour {
     }
 
     void Update() {
-
+        
         //control animation flipping
         if (!isAttack) {
             if (Input.GetAxis("Horizontal") < -0.1f)
@@ -345,8 +345,17 @@ public class PlayerScript : MonoBehaviour {
                 isSliding = false;
             }
         }
+        //UI Control
 
+        if (dashDone > 0)
+        {UIingame.instance.dashNotReady();}
+        else
+        {UIingame.instance.dashYES();}
 
+        if (jumpDone > 0)
+        { UIingame.instance.boostNotReady(); }
+        else
+        { UIingame.instance.boostYES(); }
 
     }
     void airHang()
