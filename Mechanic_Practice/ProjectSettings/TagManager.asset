@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Enemy
   - Attack
+  - Ceiling
   layers:
   - Default
   - TransparentFX
