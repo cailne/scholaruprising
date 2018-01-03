@@ -6,7 +6,7 @@ public class EnemyTurretAttack : MonoBehaviour {
 
 	public EnemyTurret enemy;
 
-	//public bool isRight = false;
+	public bool isRight = false;
 
 	void Awake(){
 		enemy = gameObject.GetComponentInParent<EnemyTurret> ();
@@ -16,7 +16,11 @@ public class EnemyTurretAttack : MonoBehaviour {
 
 		if (col.gameObject.tag == "Player") {
 
-			enemy.Attack ();
+			if (isRight) {
+				enemy.Attack (true);
+			} else {
+				enemy.Attack (false);
+			}
 
 		}
 
