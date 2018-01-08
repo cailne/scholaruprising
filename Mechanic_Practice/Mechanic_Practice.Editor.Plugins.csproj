@@ -282,13 +282,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Mechanic_Practice.Plugins.csproj">
-      <Project>{9DF78787-8A2B-D3BF-DD40-4AB854B4DEBF}</Project>
-      <Name>Mechanic_Practice.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="Mechanic_Practice.csproj">
       <Project>{A02315B2-EDB3-8224-8EFD-CE364B54A7E3}</Project>
       <Name>Mechanic_Practice</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mechanic_Practice.Plugins.csproj">
+      <Project>{9DF78787-8A2B-D3BF-DD40-4AB854B4DEBF}</Project>
+      <Name>Mechanic_Practice.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

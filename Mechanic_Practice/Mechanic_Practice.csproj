@@ -292,6 +292,8 @@
     <Compile Include="Assets\Scripts\BulletDamage.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\EndGame.cs" />
+    <Compile Include="Assets\Scripts\EnemyAllDirection.cs" />
+    <Compile Include="Assets\Scripts\EnemyAllDirectionAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyScript_Gen.cs" />
     <Compile Include="Assets\Scripts\EnemyTurret.cs" />
     <Compile Include="Assets\Scripts\EnemyTurretAttack.cs" />

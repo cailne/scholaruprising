@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4571753956242688}
   - component: {fileID: 212970148805727164}
   - component: {fileID: 114823006386627176}
-  - component: {fileID: 114319794009567512}
   m_Layer: 0
   m_Name: Respawner
   m_TagString: Untagged
@@ -236,23 +235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
---- !u!114 &114319794009567512
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1713989164124150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2276d3cd468922a459055b75207847d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootInterval: 0.6
-  bulletSpeed: 50
-  bulletTimer: 0
-  bullet: {fileID: 1823736652648716, guid: 0e35ec7e43c6eb2449f88be9af3e2e82, type: 2}
-  target: {fileID: 0}
-  shootPoint: {fileID: 4202485468340186}
 --- !u!114 &114699956075313844
 MonoBehaviour:
   m_ObjectHideFlags: 1
