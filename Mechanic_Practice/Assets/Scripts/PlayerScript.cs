@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
     new Animator playerAnim;
+
     public GameObject UIBoxHurt;
     public GameObject upAttack;
     public GameObject LAttack;
+
     public float dashSpeed;
     public float speed;
     public float maxSpeed;
@@ -19,9 +21,12 @@ public class PlayerScript : MonoBehaviour {
     private float maxYSpeedMemo;
     private float jumpDone = 0;
     private float dashDone = 0;
+	public float health=10;
+
 	private bool isGrounded;
     private bool isSliding=false;
     private bool isWallJump=false;
+
     private float wallJumpTimer = 0;
     private bool facingDirection = false;
     private bool dashDirection = false;
@@ -105,6 +110,8 @@ public class PlayerScript : MonoBehaviour {
                 UIBoxHurt.SetActive(false);
             }
         }
+
+
 
         //controls iframes
         if (iframeActive)
@@ -366,7 +373,6 @@ public class PlayerScript : MonoBehaviour {
     }
     void stagger()
     {
-        
         if (!iframeActive)
         {
             PlaySound(2); //voice effect pas hurt
@@ -380,6 +386,10 @@ public class PlayerScript : MonoBehaviour {
             GetComponent<SpriteRenderer>().color = tmp;
         }
     }
+
+	void damaged(){
+		health -= 1;
+	}
 
     //Controls wall sliding
     private void wallSlide()

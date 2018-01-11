@@ -1,14 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyAllDirectionAttack.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScript.cs">
     <Files>
       <File FileName="Assets\Scripts\PlayerScript2.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyTurret.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyTurretAttack.cs" Line="24" Column="4" />
-      <File FileName="Assets\Scripts\BulletDamage.cs" Line="15" Column="31" />
-      <File FileName="Assets\Scripts\EnemyAllDirectionAttack.cs" Line="18" Column="4" />
-      <File FileName="Assets\Scripts\EnemyAllDirection.cs" Line="24" Column="16" />
+      <File FileName="Assets\Scripts\UIManager.cs" Line="17" Column="6" />
+      <File FileName="Assets\Scripts\UIingame.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="381" Column="39" />
+      <File FileName="Assets\Scripts\HealthBar.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\BulletDamage.cs" Line="20" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -26,6 +26,7 @@ public class BulletDamage : MonoBehaviour {
 		if (col.gameObject.tag == "Player")
 		{
 			col.SendMessage("stagger");
+			col.SendMessage ("damaged");
 		}
 	}
 }
