@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PhoneScript : MonoBehaviour {
     
+	public int unlocking;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +17,7 @@ public class PhoneScript : MonoBehaviour {
 	}
     void OnTriggerEnter2D(Collider2D col)
     {
-        SceneManager.LoadScene("SceneEndDemo");
+		PlayerPrefs.SetInt ("ULevels", unlocking);
+        SceneManager.LoadScene("SelectLevel");
     }
 }

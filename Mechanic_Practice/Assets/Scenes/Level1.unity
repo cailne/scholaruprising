@@ -8135,6 +8135,11 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114892956366660362, guid: fa0ef98ae58337c47b3114494e80ca8d,
+        type: 2}
+      propertyPath: unlocking
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa0ef98ae58337c47b3114494e80ca8d, type: 2}
   m_IsPrefabParent: 0
@@ -10000,7 +10005,7 @@ Prefab:
     - target: {fileID: 224055751551993514, guid: 3c43b9da80253944baccdba2035b5040,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c43b9da80253944baccdba2035b5040, type: 2}

@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\PhoneScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript2.cs" />
+     <Compile Include="Assets\Scripts\SelectingLevel.cs" />
      <Compile Include="Assets\Scripts\UIingame.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\WallCheck.cs" />
